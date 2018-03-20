@@ -1,0 +1,20 @@
+[package]
+name = "futures-closable-stream"
+version = "0.1.0"
+authors = ["Wim Looman <wim@nemo157.com>"]
+
+[features]
+default = []
+nightly = ["pin-api", "futures-core/nightly", "futures-stable/nightly"]
+
+[dependencies.pin-api]
+version = "0.2.1"
+optional = true
+
+[dependencies.futures-core]
+git = "https://github.com/rust-lang-nursery/futures-rs"
+default-features = false
+
+[dependencies.futures-stable]
+git = "https://github.com/rust-lang-nursery/futures-rs"
+default-features = false
