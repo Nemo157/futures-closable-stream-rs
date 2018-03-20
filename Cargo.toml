@@ -10,6 +10,7 @@ nightly = ["pin-api", "futures-core/nightly", "futures-stable/nightly"]
 [dependencies.pin-api]
 version = "0.2.1"
 optional = true
+default-features = false
 
 [dependencies.futures-core]
 git = "https://github.com/rust-lang-nursery/futures-rs"
